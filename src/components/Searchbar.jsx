@@ -11,8 +11,7 @@ const Searchbar = () => {
   const handleButtonClick = async () => {
     const searchListValue = document.getElementById("search__list").value;
     setSearchTerm(searchListValue);
-    const apiUrl = `https://www.omdbapi.com/?i=tt3896198&apikey=5eec46c2&s=
-    ${searchListValue}`;
+    const apiUrl = `https://www.omdbapi.com/?apikey=5eec46c2&s=${searchListValue}`;
 
     const response = await axios.get(apiUrl);
     const data = response.data;

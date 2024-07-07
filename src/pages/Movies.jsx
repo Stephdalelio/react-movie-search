@@ -33,7 +33,7 @@ const Movies = () => {
   }
 
   function filterMovies(filter) {
-    console.log(filter);
+
     if (filter === "LOW_TO_HIGH") {
       setMoviesdefault(moviesdefault.slice().sort((a, b) => a.Year - b.Year));
     }
